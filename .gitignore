@@ -1,0 +1,9 @@
+# Compiled stuff
+*.class
+# Included files
+commons-csv-1.4-bin.tar.gz
+commons-csv-1.4/*
+# CSV files you happen to be playing around with
+*.csv
+# Except include test.csv
+!test.csv
