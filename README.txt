@@ -56,7 +56,7 @@ an error will be generated.
 To build:
 
 export CLASSPATH=".:./commons-csv-1.4/commons-csv-1.4.jar"
-javac csv_split.java
+javac csv_reduce.java
 
 
 
