@@ -1,3 +1,7 @@
+This repository contains two programs
+
+1) csv_split.java
+
 Program to split CSV files into chunks, each chunk containing all the lines
 with a given key column.
 
@@ -31,6 +35,30 @@ To build:
 
 export CLASSPATH=".:./commons-csv-1.4/commons-csv-1.4.jar"
 javac csv_split.java
+
+
+
+
+2) csv_reduce.java
+
+Program to produce a CSV file containing only a specified subset of the columns
+in the input CSV file
+
+Usage: java csv_reduce columnsFile FileName
+
+The columnsFile is a plain text (US_ASCII) file containing the names of the
+columns to be copied to the output file, one per line. The input file must have
+a .csv extension, and the ouput file will be named -small.csv
+
+If a column is required in the output file that isn't present in the input CSV,
+an error will be generated.
+
+To build:
+
+export CLASSPATH=".:./commons-csv-1.4/commons-csv-1.4.jar"
+javac csv_split.java
+
+
 
 The code in this project is licensed under the Mozilla Public License v2.0.
 Copyright (c) 2016 Noodle Partners
